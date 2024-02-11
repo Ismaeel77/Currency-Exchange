@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600&family=Poppins:wght@700&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600&family=Poppins:wght@700&display=swap"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Currency Exchange</title>
@@ -15,8 +21,12 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <div class="d-flex align-items-center">
-          <a class="fs-5 navbar-brand text-white d-none d-md-block" href="#">لوجو</a>
-          <a class="site-name fs-5 navbar-brand text-white" href="#">اسم الموقع</a>
+          <a class="fs-5 navbar-brand text-white d-none d-md-block" href="#"
+            >لوجو</a
+          >
+          <a class="site-name fs-5 navbar-brand text-white" href="#"
+            >اسم الموقع</a
+          >
         </div>
 
         <div>
@@ -25,7 +35,11 @@
               <a class="fs-5 nav-link text-white">12 ديسمبر 2022</a>
             </li>
             <li class="nav-item d-flex align-items-center me-0 me-md-5">
-              <img class="flag img-fluid d-none d-md-block" src="assets/us-flag.gif"alt="us-flag"/>
+              <img
+                class="flag img-fluid d-none d-md-block"
+                src="assets/us-flag.gif"
+                alt="us-flag"
+              />
               <a class="site-lang fs-5 nav-link text-white" href="#">English</a>
             </li>
           </ul>
@@ -42,16 +56,30 @@
             نموذج سطر جديد تتتسشيب سيبهتسيمبت
           </p>
 
-          <div id="exchanger" class="p-5 mt-5">
-            <div class="d-lg-flex justify-content-between align-items-center d-sm-block text-center position-relative pt-5 pb-5">
-              <div class="right-box d-flex align-items-center justify-content-sm-end justify-content-lg-start gap-sm-2 gap-md-0 pe-sm-3 pe-lg-0 mb-sm-2 mb-lg-0">
-
+          <div id="exchanger" class="p-5 mt-5 position-relative">
+            <i class="img-lg position-absolute d-none d-lg-block z-3">
+              <img class="img-fluid" src="assets/Frame-1.png" />
+            </i>
+            <div
+              class="d-lg-flex justify-content-between align-items-center d-sm-block text-center position-relative pt-5 pb-5"
+            >
+              <i class="img-sm position-absolute d-lg-none d-block z-3">
+                <img class="img-fluid" src="assets/Frame-2.png" />
+              </i>
+              <div
+                class="right-box d-flex align-items-center gap-sm-2 gap-md-0 pe-sm-3 pe-lg-0 mb-sm-2 mb-lg-0"
+              >
                 <div class="input-number position-relative">
                   <input class="fw-bold text-center" type="number" />
                 </div>
 
                 <div class="dropdown position-relative">
-                  <button class="select-btn btn-1 dropdown-toggle d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button
+                    class="select-btn btn-1 dropdown-toggle d-flex justify-content-center align-items-center"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     <p class="d-flex align-items-center">
                       <span class="d-inline-block">
                         <i class="fi fi-us ms-3"></i>
@@ -59,14 +87,28 @@
                       دولار أمريكي - USD
                     </p>
                   </button>
-                  <div class="dropdown-menu pt-0 mx-0 rounded-3 overflow-hidden" data-bs-theme="light">
-                    <form class="dropdown-form position-relative p-2 bg-body-tertiary">
-                      <input type="search" class="form-control pt-3 pb-3 pe-5" autocomplete="false" placeholder="ابحث باسم العملة..."/>
+                  <div
+                    class="dropdown-menu pt-0 mx-0 rounded-3 overflow-hidden"
+                    data-bs-theme="light"
+                  >
+                    <form
+                      class="dropdown-form position-relative p-2 bg-body-tertiary"
+                    >
+                      <input
+                        type="search"
+                        class="form-control pt-3 pb-3 pe-5"
+                        autocomplete="false"
+                        placeholder="ابحث باسم العملة..."
+                      />
                       <img src="assets/search.png" alt="search-icon" />
                     </form>
-                    <ul class="list-1 currency-list list-unstyled bg-body-tertiary mb-0 pe-0">
+                    <ul
+                      class="list-1 currency-list list-unstyled bg-body-tertiary mb-0 pe-0"
+                    >
                       <li class="option active bg-body-tertiary" role="option">
-                        <p class="dropdown-item d-flex align-items-center gap-2 py-2">
+                        <p
+                          class="dropdown-item d-flex align-items-center gap-2 py-2"
+                        >
                           <span class="d-inline-block p-1">
                             <i class="fi fi-us"></i>
                           </span>
@@ -74,7 +116,9 @@
                         </p>
                       </li>
                       <li class="option" role="option">
-                        <p class="dropdown-item d-flex align-items-center gap-2 py-2">
+                        <p
+                          class="dropdown-item d-flex align-items-center gap-2 py-2"
+                        >
                           <span class="d-inline-block p-1">
                             <i class="fi fi-jp"></i>
                           </span>
@@ -82,7 +126,9 @@
                         </p>
                       </li>
                       <li class="option" role="option">
-                        <p class="dropdown-item d-flex align-items-center gap-2 py-2">
+                        <p
+                          class="dropdown-item d-flex align-items-center gap-2 py-2"
+                        >
                           <span class="d-inline-block p-1">
                             <i class="fi fi-eg"></i>
                           </span>
@@ -94,8 +140,9 @@
                 </div>
               </div>
 
-              <div class="left-box d-flex align-items-center justify-content-sm-end justify-content-lg-end gap-sm-2 gap-md-0 pe-sm-3 pe-lg-0">
-
+              <div
+                class="left-box d-flex align-items-center justify-content-lg-end gap-sm-2 gap-md-0 pe-sm-3 pe-lg-0"
+              >
                 <div class="input-number position-relative">
                   <input class="fw-bold text-center" type="number" />
                 </div>
@@ -105,7 +152,8 @@
                     class="select-btn btn-2 dropdown-toggle d-flex justify-content-center align-items-center"
                     type="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                    aria-expanded="false"
+                  >
                     <p class="d-flex align-items-center">
                       <span class="d-inline-block">
                         <i class="fi fi-eg ms-3"></i>
@@ -113,19 +161,28 @@
                       الجنية المصري - EGP
                     </p>
                   </button>
-                  <div class="dropdown-menu pt-0 mx-0 rounded-3 overflow-hidden" data-bs-theme="light">
-                    <form class="dropdown-form position-relative p-2 bg-body-tertiary">
+                  <div
+                    class="dropdown-menu pt-0 mx-0 rounded-3 overflow-hidden"
+                    data-bs-theme="light"
+                  >
+                    <form
+                      class="dropdown-form position-relative p-2 bg-body-tertiary"
+                    >
                       <input
                         type="search"
                         class="form-control pt-3 pb-3 pe-5"
                         autocomplete="false"
-                        placeholder="ابحث باسم العملة..."/>
+                        placeholder="ابحث باسم العملة..."
+                      />
                       <img src="assets/search.png" alt="search-icon" />
                     </form>
                     <ul
-                      class="list-2 currency-list list-unstyled bg-body-tertiary mb-0 pe-0">
+                      class="list-2 currency-list list-unstyled bg-body-tertiary mb-0 pe-0"
+                    >
                       <li class="option bg-body-tertiary" role="option">
-                        <p class="dropdown-item d-flex align-items-center gap-2 py-2">
+                        <p
+                          class="dropdown-item d-flex align-items-center gap-2 py-2"
+                        >
                           <span class="d-inline-block p-1">
                             <i class="fi fi-us"></i>
                           </span>
@@ -133,7 +190,9 @@
                         </p>
                       </li>
                       <li class="option" role="option">
-                        <p class="dropdown-item d-flex align-items-center gap-2 py-2">
+                        <p
+                          class="dropdown-item d-flex align-items-center gap-2 py-2"
+                        >
                           <span class="d-inline-block p-1">
                             <i class="fi fi-jp"></i>
                           </span>
@@ -141,7 +200,9 @@
                         </p>
                       </li>
                       <li class="option active" role="option">
-                        <p class="dropdown-item d-flex align-items-center gap-2 py-2">
+                        <p
+                          class="dropdown-item d-flex align-items-center gap-2 py-2"
+                        >
                           <span class="d-inline-block p-1">
                             <i class="fi fi-eg"></i>
                           </span>
@@ -154,8 +215,10 @@
               </div>
             </div>
 
-            <div class="d-md-flex justify-content-md-around align-items-center d-sm-block">
-              <div class="d-flex align-items-center justify-content-sm-center gap-sm-1 mb-sm-3 mb-md-0">
+            <div class="d-md-flex align-items-center d-sm-block">
+              <div
+                class="d-flex align-items-center justify-content-sm-center gap-sm-1 mb-sm-3 mb-md-0 pe-md-5"
+              >
                 <p class="text-black-50">
                   <span class="fw-bold text-black">1</span> دولار أمريكي
                 </p>
@@ -165,7 +228,9 @@
                 </p>
               </div>
 
-              <div class="d-flex align-items-center justify-content-sm-center">
+              <div
+                class="d-flex align-items-center justify-content-sm-center me-md-auto ms-md-auto"
+              >
                 <p class="text-black-50">
                   <img
                     class="ms-2"
@@ -176,7 +241,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -362,20 +426,25 @@
       </section>
 
       <footer class="text-center p-3">
-        <div class="container d-sm-block d-md-flex justify-content-between align-items-md-center text-white">
+        <div
+          class="container d-sm-block d-md-flex justify-content-between align-items-md-center text-white"
+        >
           <div class="d-flex gap-md-4 fs-5">
             <p>سياسة الخصوصية</p>
             <p>حقوق الملكية</p>
           </div>
           <div class="icon-container d-flex gap-md-4 mt-sm-3 mt-md-0">
-            <a href="#"><img src="assets/Instagram.png" alt="instagram-icon"/></a>
+            <a href="#"
+              ><img src="assets/Instagram.png" alt="instagram-icon"
+            /></a>
             <a href="#"><img src="assets/Twitter.png" alt="twitter-icon" /></a>
             <a href="#"><img src="assets/Google.png" alt="google-icon" /></a>
-            <a href="#"><img src="assets/Facebook.png" alt="facebook-icon"/></a>
+            <a href="#"
+              ><img src="assets/Facebook.png" alt="facebook-icon"
+            /></a>
           </div>
         </div>
       </footer>
-
     </main>
 
     <script src="js/main.js"></script>

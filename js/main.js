@@ -14,7 +14,7 @@ options1.forEach((option) => {
     });
     if (!option.classList.contains("active")) {
       e.target.classList.add("active");
-      selectBtn1.textContent = e.target.textContent;
+      selectBtn1.innerHTML = e.target.innerHTML;
       currencyList1.classList.toggle("active");
     }
   });
@@ -36,7 +36,7 @@ options2.forEach((option) => {
     });
     if (!option.classList.contains("active")) {
       e.target.classList.add("active");
-      selectBtn2.textContent = e.target.textContent;
+      selectBtn2.innerHTML = e.target.innerHTML;
       currencyList2.classList.toggle("active");
     }
   });

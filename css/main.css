@@ -40,7 +40,11 @@ nav {
 }
 
 #intro {
-  background-color: #0d187c71;
+  background-image: url(/assets/bg-left.png), url(/assets/bg-right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0d187c;
+  background-blend-mode: overlay;
 }
 
 .intro-text {
@@ -63,10 +67,29 @@ nav {
   -o-border-radius: 8px;
 }
 
-#exchanger > div:first-child {
-  background-image: url(/assets/Frame-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
+#exchanger .img-lg {
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+#exchanger .img-lg img {
+  width: 66.4px;
+}
+
+#exchanger .img-sm {
+  cursor: pointer;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 #exchanger .input-number {
@@ -169,9 +192,24 @@ nav {
     gap: 5px;
   }
 
+  #exchanger .img-sm {
+    right: 16px;
+    top: 48%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+
+  #exchanger .img-sm img {
+    height: 100px !important;
+  }
+
   #exchanger .input-number input[type="number"] {
     font-size: 15px;
     padding: 7px 25px;
+    width: 100px !important;
   }
 
   #exchanger .dropdown {
@@ -201,10 +239,12 @@ nav {
 }
 
 @media (max-width: 991px) {
-  #exchanger > div:first-child {
-    background-image: url(/assets/Frame-2.png);
-    background-position: right;
-    background-repeat: no-repeat;
+  #exchanger .img-sm img {
+    height: 140px;
+  }
+
+  #exchanger .input-number input[type="number"] {
+    width: 160px;
   }
 
   #exchanger .input-number input[type="number"],
@@ -326,19 +366,24 @@ footer a {
   max-width: 100%;
 }
 
+@media (max-width: 575px) {
+  footer .icon-container {
+    margin-top: 15px;
+  }
+}
+
 @media (max-width: 767px) {
   footer p {
     width: 100%;
     font-size: 16px;
   }
-  footer a {
+  footer a,
+  footer .icon-container {
     margin-left: auto;
     margin-right: auto;
   }
 
   footer .icon-container {
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
