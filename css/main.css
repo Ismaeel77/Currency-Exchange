@@ -45,6 +45,8 @@ nav {
   background-size: cover;
   background-color: #0d187c;
   background-blend-mode: overlay;
+  background-attachment : fixed;
+  position : relative;
 }
 
 .intro-text {
