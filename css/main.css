@@ -165,6 +165,8 @@ nav {
   background-size: cover;
   background-color: var(--main-color);
   background-blend-mode: overlay;
+  background-attachment : fixed;
+  position : relative;
 }
 
 .intro-text {
