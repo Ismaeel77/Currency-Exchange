@@ -14,10 +14,74 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600&family=Poppins:wght@700&display=swap"
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Currency Exchange</title>
   </head>
   <body>
+    <!-- Start Settings Box -->
+    <div class="setting-box">
+      <div class="set-box"><i class="fa-solid fa-gear"></i></div>
+      <div class="setting-container">
+        <div class="option-box">
+          <h4>colors</h4>
+          <ul class="colors-list color-list">
+            <li class="active" data-color="#0d187c"></li>
+            <li data-color="#3f51b5"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#e91e63"></li>
+            <li data-color="#2196f3"></li>
+            <li data-color="#ff5722"></li>
+            <li data-color="#000000"></li>
+            <li data-color="#FAEF5D"></li>
+            <li data-color="#B31312"></li>
+            <li data-color="#EA906C"></li>
+            <li data-color="#143F6B"></li>
+            <li data-color="#211951"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <div class="body-bg-option">
+            <h4>body background</h4>
+            <ul class="body-colors-list color-list">
+              <li class="active" data-color="#0d187c"></li>
+              <li data-color="#3f51b5"></li>
+              <li data-color="#009688"></li>
+              <li data-color="#e91e63"></li>
+              <li data-color="#2196f3"></li>
+              <li data-color="#ff5722"></li>
+              <li data-color="#000000"></li>
+              <li data-color="#FAEF5D"></li>
+              <li data-color="#B31312"></li>
+              <li data-color="#EA906C"></li>
+              <li data-color="#143F6B"></li>
+              <li data-color="#211951"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="option-box">
+          <div class="card-bg-option">
+            <h4>card background</h4>
+            <ul class="card-colors-list color-list">
+              <li class="active" data-color="#0d187c"></li>
+              <li data-color="#3f51b5"></li>
+              <li data-color="#009688"></li>
+              <li data-color="#e91e63"></li>
+              <li data-color="#2196f3"></li>
+              <li data-color="#ff5722"></li>
+              <li data-color="#000000"></li>
+              <li data-color="#FAEF5D"></li>
+              <li data-color="#B31312"></li>
+              <li data-color="#EA906C"></li>
+              <li data-color="#143F6B"></li>
+              <li data-color="#211951"></li>
+            </ul>
+          </div>
+        </div>
+        <button class="reset-options">reset options</button>
+      </div>
+    </div>
+    <!-- End Settings Box -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <div class="d-flex align-items-center">
@@ -35,11 +99,7 @@
               <a class="fs-5 nav-link text-white">12 ديسمبر 2022</a>
             </li>
             <li class="nav-item d-flex align-items-center me-0 me-md-5">
-              <img
-                class="flag img-fluid d-none d-md-block"
-                src="assets/us-flag.gif"
-                alt="us-flag"
-              />
+              <i class="fi fi-us d-none d-md-block"></i>
               <a class="site-lang fs-5 nav-link text-white" href="#">English</a>
             </li>
           </ul>
@@ -171,7 +231,6 @@
                       <input
                         type="search"
                         class="form-control pt-3 pb-3 pe-5"
-                        autocomplete="false"
                         placeholder="ابحث باسم العملة..."
                       />
                       <img src="assets/search.png" alt="search-icon" />
@@ -232,11 +291,7 @@
                 class="d-flex align-items-center justify-content-sm-center me-md-auto ms-md-auto"
               >
                 <p class="text-black-50">
-                  <img
-                    class="ms-2"
-                    src="assets/update-icon.png"
-                    alt="update-icon"
-                  />يتم تحديث السعر كل 30 ثانية
+                  <img class="ms-2" src="assets/update-icon.png" alt="update-icon"/>يتم تحديث السعر كل 30 ثانية
                 </p>
               </div>
             </div>
@@ -256,81 +311,81 @@
         </div>
         <div class="row gap-sm-2 gap-md-4 mb-3 me-auto">
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags.png" />
+            <img src="assets/Flags-0.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (1).png" />
+            <img src="assets/Flags-1.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (2).png" />
+            <img src="assets/Flags-2.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (3).png" />
+            <img src="assets/Flags-3.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (4).png" />
-            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
-            <span class="number fw-bold">24.55</span>
-          </div>
-        </div>
-        <div class="row gap-sm-2 gap-md-4 mb-3 me-auto">
-          <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (5).png" />
-            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
-            <span class="number fw-bold">24.55</span>
-          </div>
-          <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (6).png" />
-            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
-            <span class="number fw-bold">24.55</span>
-          </div>
-          <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (7).png" />
-            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
-            <span class="number fw-bold">24.55</span>
-          </div>
-          <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (8).png" />
-            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
-            <span class="number fw-bold">24.55</span>
-          </div>
-          <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (9).png" />
+            <img src="assets/Flags-4.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
         </div>
         <div class="row gap-sm-2 gap-md-4 mb-3 me-auto">
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (10).png" />
+            <img src="assets/Flags-5.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (11).png" />
+            <img src="assets/Flags-6.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (12).png" />
+            <img src="assets/Flags-7.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (13).png" />
+            <img src="assets/Flags-8.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (14).png" />
+            <img src="assets/Flags-9.png" />
+            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
+            <span class="number fw-bold">24.55</span>
+          </div>
+        </div>
+        <div class="row gap-sm-2 gap-md-4 mb-3 me-auto">
+          <div class="col-md-2 col-sm-6 currency-card">
+            <img src="assets/Flags-10.png" />
+            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
+            <span class="number fw-bold">24.55</span>
+          </div>
+          <div class="col-md-2 col-sm-6 currency-card">
+            <img src="assets/Flags-11.png" />
+            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
+            <span class="number fw-bold">24.55</span>
+          </div>
+          <div class="col-md-2 col-sm-6 currency-card">
+            <img src="assets/Flags-12.png" />
+            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
+            <span class="number fw-bold">24.55</span>
+          </div>
+          <div class="col-md-2 col-sm-6 currency-card">
+            <img src="assets/Flags-13.png" />
+            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
+            <span class="number fw-bold">24.55</span>
+          </div>
+          <div class="col-md-2 col-sm-6 currency-card">
+            <img src="assets/Flags-14.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
@@ -340,87 +395,87 @@
         </div>
         <div class="row gap-sm-2 gap-md-4 mb-3 me-auto">
           <div class="col-md-2 currency-card">
-            <img src="assets/Flags (5).png" />
+            <img src="assets/Flags-5.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (6).png" />
+            <img src="assets/Flags-6.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (7).png" />
+            <img src="assets/Flags-7.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (8).png" />
+            <img src="assets/Flags-8.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (9).png" />
-            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
-            <span class="number fw-bold">24.55</span>
-          </div>
-        </div>
-        <div class="row gap-sm-2 gap-md-4 mb-3 me-auto">
-          <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (10).png" />
-            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
-            <span class="number fw-bold">24.55</span>
-          </div>
-          <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (11).png" />
-            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
-            <span class="number fw-bold">24.55</span>
-          </div>
-          <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (19).png" />
-            <p class="mt-2 mb-2">الين الياباني<br />GBP</p>
-            <span class="number fw-bold">24.55</span>
-          </div>
-          <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (13).png" />
-            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
-            <span class="number fw-bold">24.55</span>
-          </div>
-          <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (14).png" />
+            <img src="assets/Flags-9.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
         </div>
         <div class="row gap-sm-2 gap-md-4 mb-3 me-auto">
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (10).png" />
+            <img src="assets/Flags-10.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (11).png" />
+            <img src="assets/Flags-11.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (19).png" />
+            <img src="assets/Flags-19.png" />
             <p class="mt-2 mb-2">الين الياباني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (13).png" />
+            <img src="assets/Flags-13.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
           <div class="col-md-2 col-sm-6 currency-card">
-            <img src="assets/Flags (14).png" />
+            <img src="assets/Flags-14.png" />
             <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
             <span class="number fw-bold">24.55</span>
           </div>
         </div>
-        <button type="button">المزيد</button>
-        <div class="ad-container mt-3 mb-3 text-center">
+        <div class="row gap-sm-2 gap-md-4 mb-3 me-auto">
+          <div class="col-md-2 col-sm-6 currency-card">
+            <img src="assets/Flags-10.png" />
+            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
+            <span class="number fw-bold">24.55</span>
+          </div>
+          <div class="col-md-2 col-sm-6 currency-card">
+            <img src="assets/Flags-11.png" />
+            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
+            <span class="number fw-bold">24.55</span>
+          </div>
+          <div class="col-md-2 col-sm-6 currency-card">
+            <img src="assets/Flags-19.png" />
+            <p class="mt-2 mb-2">الين الياباني<br />GBP</p>
+            <span class="number fw-bold">24.55</span>
+          </div>
+          <div class="col-md-2 col-sm-6 currency-card">
+            <img src="assets/Flags-13.png" />
+            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
+            <span class="number fw-bold">24.55</span>
+          </div>
+          <div class="col-md-2 col-sm-6 currency-card">
+            <img src="assets/Flags-14.png" />
+            <p class="mt-2 mb-2">الجنية اللبناني<br />GBP</p>
+            <span class="number fw-bold">24.55</span>
+          </div>
+        </div>
+        <button class="more-btn" type="button">المزيد</button>
+        <div class="ad-container last-ad mt-3 mb-3 text-center">
           <img class="img-fluid w-100" src="assets/ad.png" alt="ad" />
         </div>
       </section>
@@ -447,8 +502,8 @@
       </footer>
     </main>
 
-    <script src="js/main.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
